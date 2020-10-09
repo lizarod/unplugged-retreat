@@ -1,1 +1,72 @@
 
+Homepage
+- Header
+    - Logo
+    - Navigation bar
+        - About
+        - FAQ
+     - Headline
+     - Image
+ 
+- Content Area
+    - Newsletter signup
+        - Headline text
+        - Paragraph text
+        - Headline text
+        - Email field
+        - Submit button
+    - Info about Unplugged
+        - Headline text
+        - Background Image
+        - Icons
+        - Text
+    - Previous retreats
+        - Headline text
+        - Paragraph text
+        - Image
+ 
+- Footer
+     - Contact
+         - Headline text
+         - Contact info 
+     - Social Media
+         - Headline text
+         - Social icons
+     - Copyright
+
+
+content-wrapper (any elements that contain other content and visuals)
+
+header-divider (the space in between the logo and navigation)
+
+hero-area (the container of the top image)
+
+form-description (the block of text on top of the newsletter signup form)
+
+form (the newsletter signup form)
+
+features (the section that contains the features and icons in the middle of the page)
+
+features-items (contains the retreat features and icons)
+
+features-item-description (the individual descriptions for each icon)
+
+reviews (the section that contains reviews of previous events, right above the footer)
+
+footer-content (the div that holds your address info)
+
+contact (the contact address in the footer)
+
+social (the social media div in the footer)
+
+social-icons (the div that holds our social media icons)
+
+copyright (the copyright div in the footer)
+
+About us page
+A "mission" section at the top
+A Google Map
+A section of general contact info at the bottom, above the footer
+
+
+
