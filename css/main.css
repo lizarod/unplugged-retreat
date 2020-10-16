@@ -141,7 +141,12 @@ p{
 }
 
 figure{
+  margin: 0;
 
+}
+
+img{
+  width: 100%;
 }
 
 address{
@@ -189,6 +194,15 @@ header .content-wrapper{
 
 }
 
+header figure{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+
 .header-divider{
   width: 100%;
   height: 1px;
@@ -196,9 +210,7 @@ header .content-wrapper{
   background: #3a3a3a
 }
 
-header figure{
 
-}
 
 
 
@@ -209,6 +221,8 @@ header nav {
   flex-flow: row wrap;
   width: 60%;
   text-transform: uppercase;
+  font-size: 1.125em;
+  font-weight: 700;
 
 
 
@@ -222,12 +236,17 @@ header nav ul{
 
 }
 
+header nav ul li {
+  font-size: 1.125em;
+}
+
 
 /* Footer Styles */
 
 footer {
 
 flex-direction: column;
+text-align: center;
 }
 
 footer p{
@@ -254,6 +273,7 @@ footer .social-icons{
 
 }
 
+
 footer .social-icons p {
     display: flex;
   justify-content: center;
@@ -275,14 +295,20 @@ footer .copyright{
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/Assets/unplugged-retreat.jpg');
+  background-size: cover;
+  min-height: 500px;
+  background-position: center;
+
 
 }
 
 
 .hero-area h1{
   font-family: 'Poppins' , Helvetica, Arial, sans-serif;
-  font-size: 2em;
+  font-size: 2.25em;
   font-weight: 500;
+  line-height: 1.2;
 }
 
 aside{
@@ -307,6 +333,8 @@ aside .form {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/Assets/72ppi-rawpixel-800820-unsplash1.jpg') center no-repeat #333;
+  background-size: cover;
 }
 
 .features h2{
@@ -343,11 +371,13 @@ aside .form {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 
 }
 
 .reviews h2{
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .reviews h3{
@@ -356,9 +386,6 @@ aside .form {
 
 }
 
-.featured-review{
-
-}
 
 
  
@@ -398,10 +425,8 @@ input[type=button] {
 
 }
 
-.mission-content{
 
 
-}
 
 .contact-section{
   display: flex;
@@ -576,7 +601,7 @@ h3 {
   }
 
   header nav{
-    max-width: 20%;
+    width: 20%;
   }
 
   header nav ul{
@@ -588,6 +613,17 @@ h3 {
   }
 
   /* Hero Area*/
+
+  .hero-area{
+ min-height: 600px;
+  }
+
+    .hero-area h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+}
+
 
   /* Aside */
 
@@ -618,7 +654,7 @@ h3 {
   }
 
   .features .feature-item-description{
-    width: 60%;
+    width: 62%;
   }
 
 /*Reviews*/
@@ -635,7 +671,8 @@ h3 {
   }
 
 
-  .reviews article div{
+  .reviews article div,
+  .reviews article figure{
     width: 49%;
   }
 
@@ -651,11 +688,8 @@ h3 {
     margin: 100px 0;
   }
 
-  .footer-content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+footer .contact{
+    margin-bottom: 0;
 
   }
 
@@ -672,32 +706,18 @@ h3 {
       line-height: 1.285;
   }
 
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
 
   footer .copyright{
     width: 100%;
   }
 
-  /****** FAQ  Page ******/
-  .faq-content{
 
-    flex-basis: 40%;
-  }
-
-  .faq .content-wrapper{
-    justify-content: space-between;
-
-  }
-
-  .faq h2{
-    width: 100%;
-  }
-
-  
-  .faq h4,
-  .faq p {
-      font-size: .875em;
-      line-height: 1.125;
-  }
 
 /******** ABOUT US Page *********/
 .mission-content{
@@ -729,19 +749,60 @@ h3 {
   }
 }
 
+  /****** FAQ  Page ******/
+  .faq-content{
+
+    flex-basis: 45%;
+  }
+
+  .faq .content-wrapper{
+    justify-content: space-between;
+
+  }
+
+  .faq h2{
+    width: 100%;
+  }
+
+
+  .faq h4,
+  .faq p {
+      font-size: .875em;
+      line-height: 1.125;
+  }
+
 @media only screen and (min-width: 1200px) {
   /* Desktop Styles*/
 
   .content-wrapper{
-    width: 960px;
-    margin: 15px 0 10px 0;
+    max-width: 960px;
+    
 
+  }
+
+   header {
+    padding: 15px 0;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+      font-size: 1.875em;
+  }
+
+  p {
+      font-size: 1.125em;
+      line-height: 1.333;
   }
  /* Hero Area*/
 
  
   .hero-area h1{
-    width: 60%;
+    width: 80%;
+    font-size: 3.75em;
 
   }
 
@@ -763,39 +824,52 @@ aside .content-wrapper .form-description,
 
   .features h2{
 
-    width: 80%;
+    width: 90%;
 
   }
 
   .features article{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
-    flex-basis: 30%;
+
+    flex-basis: 33%;
 
   }
 
   /* Reviews */
 
   .reviews article div{
-    width: 50%;
+    width: 45%;
 
   }
+
+   footer h4 {
+    font-size: 1.875em;
+  }
+
 
   /******** ABOUT US Page *********/
 
 .mission h2,
 .contact-section .content-wrapper h2{
   width: 95%;
-
+  font-size: 3em;
   
 }
+
+ .contact-content h4 {
+    font-size: 1.875em;
+  }
 
 /****** FAQ  Page ******/
 
  .faq h2{
     width: 100%;
+    font-size: 3em;
+  }
+
+.faq h4,
+.faq p {
+      font-size: 1.125em;
+      line-height: 1;
   }
 
 }
