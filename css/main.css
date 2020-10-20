@@ -354,18 +354,18 @@ aside .form {
 
 .features p{
   margin: 0;
+  text-align: center;
 
 }
 
 
-.fontawesome-icon{
-
-
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
-.feature-item-description{
 
-}
+
 
 .reviews{
   display: flex;
@@ -671,6 +671,10 @@ h3 {
   .features .feature-item-description{
     width: 62%;
   }
+
+
+
+
 
 /*Reviews*/
 
